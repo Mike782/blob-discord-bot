@@ -1,6 +1,6 @@
 {
-  "name": "NebulousDiscordBot",
-  "description": "Official Nebulous bot for the Official Nebulous Discord server",
+  "name": "BlobDiscordBot",
+  "description": "Official Blob bot for the Official Blob Discord server",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
