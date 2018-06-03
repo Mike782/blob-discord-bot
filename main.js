@@ -19,7 +19,7 @@ client.user.setActivity('Blob.io', { type: 'PLAYING' });
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 if(command === "say") {
-if(!message.member.roles.some(r=>["null", "null"].includes(r.name)) )
+if(!message.member.roles.some(r=>["Assisting Coder"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to say something! You need to be null or higher!");
     
     const sayMessage = args.join(" ");
