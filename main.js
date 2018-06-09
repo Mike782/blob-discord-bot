@@ -5,7 +5,7 @@ const config = require("./config.json");
 client.on('ready', () => {
   console.log('Ready!');
 
-client.user.setActivity('i am not working yet', { type: 'PLAYING' });
+client.user.setActivity('i am not working yet well', { type: 'PLAYING' });
 
 });
 
@@ -19,8 +19,8 @@ client.user.setActivity('i am not working yet', { type: 'PLAYING' });
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 if(command === "say") {
-if(!message.member.roles.some(r=>["Assisting Coder"].includes(r.name)) )
-      return message.reply("Sorry, you don't have permissions to say something! You need to be null or higher!");
+if(!message.member.roles.some(r=>["Assisting Coder", "Server Administrator"].includes(r.name)) )
+      return message.reply("Sorry, you don't have permissions to use this command! You need to be a Server Administrator or higher!");
     
     const sayMessage = args.join(" ");
     
