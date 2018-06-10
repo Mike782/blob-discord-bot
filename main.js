@@ -5,7 +5,7 @@ const config = require("./config.json");
 client.on('ready', () => {
   console.log('Ready!');
 
-client.user.setActivity('i am not working yet well', { type: 'PLAYING' });
+client.user.setActivity('Blob.io', { type: 'PLAYING' });
 
 });
 
