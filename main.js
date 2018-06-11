@@ -19,7 +19,7 @@ client.user.setActivity('Blob.io', { type: 'PLAYING' });
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 if(command === "say") {
-if(!message.member.roles.some(r=>["Assisting Coder", "Server Administrator"].includes(r.name)) )
+if(!message.member.roles.some(r=>["Assisting Coder", "Server Administrator", "Devs", "Head Administrator"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this command! You need to be a Server Administrator or higher!");
     
     const sayMessage = args.join(" ");
@@ -31,7 +31,7 @@ if(!message.member.roles.some(r=>["Assisting Coder", "Server Administrator"].inc
 
 
   if(command === "clear") {
-  if(!message.member.roles.some(r=>["null", "null"].includes(r.name)) )
+  if(!message.member.roles.some(r=>["Assisting Coder", "Server Administrator", "Devs", "Head Administrator"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to clear the chat! You need to be null or higher! <#446679015999406081>");
 
     
